@@ -1,0 +1,87 @@
+/* Styles globaux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #d73c3c;
+    margin: 10;
+    padding: 10;
+}
+
+/* Styles pour le conteneur du panier */
+#cart {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(110, 218, 42, 0.1);
+}
+
+/* Styles pour chaque item du panier */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #8e6262;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+/* Styles pour les boutons */
+.cart-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles pour les éléments de quantité et prix */
+.quantity {
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Styles pour le bouton de suppression */
+.remove {
+    background-color: #dc3545;
+}
+
+.remove:hover {
+    background-color: #c82333;
+}
+
+/* Styles pour le bouton cœur */
+.heart {
+    color: #999;
+    font-size: 1.6em;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.heart.liked {
+    color: #e74c3c;
+}
+
+/* Styles pour le total */
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.3em;
+    color: #333;
+}
